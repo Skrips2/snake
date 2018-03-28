@@ -70,7 +70,9 @@ public class GameField extends JPanel implements ActionListener {
                 g.drawImage(dot, x[i], y[i], this);
             }
         } else {
-            String str = "Game Over";
+            String str = "Game Over  prees enter";
+
+
 
             g.setColor(Color.white);
 
@@ -179,6 +181,10 @@ public class GameField extends JPanel implements ActionListener {
                 if (inPause && key == KeyEvent.VK_P) {
                     timer.start();
                     inPause = false;
+                }
+                if(!inGame && key == KeyEvent.VK_ENTER){
+                    inGame = true;
+                    initGame();
                 }
             }
         }
