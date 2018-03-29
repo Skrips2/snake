@@ -55,9 +55,9 @@ public class GameField extends JPanel implements ActionListener {
     }
 
     public void loadImages() {
-        ImageIcon iia = new ImageIcon("apple.png");
+        ImageIcon iia = new ImageIcon("C:/Users/DOM/Downloads/snake/src/resources/apple.png");
         apple = iia.getImage();
-        ImageIcon iid = new ImageIcon("dot.png");
+        ImageIcon iid = new ImageIcon("C:/Users/DOM/Downloads/snake/src/resources/dot.png");
         dot = iid.getImage();
     }
 
@@ -76,7 +76,7 @@ public class GameField extends JPanel implements ActionListener {
 
             g.setColor(Color.white);
 
-            g.drawString(str, 125, SIZE / 2);
+            g.drawString(str, 100, SIZE / 2);
 
         }
 
