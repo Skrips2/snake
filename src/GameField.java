@@ -70,7 +70,7 @@ public class GameField extends JPanel implements ActionListener {
                 g.drawImage(dot, x[i], y[i], this);
             }
         } else {
-            String str = "Game Over  prees enter";
+            String str = "Game Over  press enter";
 
 
 
